@@ -14,3 +14,4 @@ PetalFloat是一个Web前端花瓣飘落效果插件
 </script>
 ```
 ### 效果预览
+[https://zhiyual.github.io/PetalFloat/](https://zhiyual.github.io/PetalFloat/)
