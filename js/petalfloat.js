@@ -71,7 +71,7 @@ var PF = {};
 			this.addImg();
 		}
 		
-		console.log(this._plist)
+//		console.log(this._plist)
 		
 		this.stage.clearRect(0, 0, this.box.width, this.box.height);
 		for (var i=0;i<this._plist.length;i++) {
