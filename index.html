@@ -23,10 +23,14 @@
 	<body>
 		<script type="text/javascript">
 			var pf = new PF({
-				maxt : 60,
+				life : 60,
 			});
 			pf.init();
 			pf.start();
+			
+			window.addEventListener("resize", function () {
+				pf.reSize();
+			})
 		</script>
 	</body>
 </html>

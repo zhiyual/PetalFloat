@@ -30,7 +30,7 @@ var PF = {};
 		this.stage = null;
 		this._anmition = null;
 		this._time = null;
-		this._maxtime = option.maxt || 30;
+		this._maxtime = option.life || 30;
 	}
 	
 	PF = pf;
@@ -46,6 +46,13 @@ var PF = {};
 		this.box.style.zIndex = this._index;
 		document.body.appendChild(this.box);
 		this.stage = this.box.getContext("2d");
+	}
+	
+	pf.prototype.reSize = function () {
+		this._win.w = window.innerWidth;
+		this._win.h = window.innerHeight;
+		this.box.width = this._win.w;
+		this.box.height = this._win.h;
 	}
 	
 	pf.prototype.action = function () {
@@ -138,5 +145,8 @@ var PF = {};
 		this.stage.translate(-(param.x+img_w/2), -(param.y+img_h/2));
 	}
 	
+	window.addEventListener("resize", function () {
+		
+	})
 })();
 
