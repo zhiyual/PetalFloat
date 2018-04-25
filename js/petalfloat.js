@@ -145,8 +145,5 @@ var PF = {};
 		this.stage.translate(-(param.x+img_w/2), -(param.y+img_h/2));
 	}
 	
-	window.addEventListener("resize", function () {
-		
-	})
 })();
 
